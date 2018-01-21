@@ -1,21 +1,21 @@
-
 class Doctor 
   
-  attr_accessor :name, :appointments
+  attr_accessor :name
+  attr_reader :appointments
   
   def initialize(name)
     @name = name 
     @appointments = []
   end
   
-  def add_appointment(appointment)
-    @appointments << appointment
-    appointment.doctor = self 
+  def add_song(appointment)
+    @appointments << appointment 
+    appointment.artist = self
   end
   
- # def patients 
- #   self.appointments.collect { |appointment| appointment.patient }
- # end
+  def genres 
+    self.appointments.collect { |appointment| appointment.genre }
+  end
   
 end
 
