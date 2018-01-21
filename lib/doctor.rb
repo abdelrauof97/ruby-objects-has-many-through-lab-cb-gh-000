@@ -13,7 +13,7 @@ class Doctor
     appointment.artist = self
   end
   
-  def genres 
+  def patients 
     self.appointments.collect { |appointment| appointment.genre }
   end
   
