@@ -14,7 +14,7 @@ end
 
 class Appointment 
   
-  attr_accessor :doctor, :name, :genre
+  attr_accessor :doctor, :date, :genre
 
   def initialize(name, genre)
     @name = name
