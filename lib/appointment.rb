@@ -12,9 +12,9 @@ class Appointment
   
 end
 
-class Song 
+class Appointment 
   
-  attr_accessor :artist, :name, :genre
+  attr_accessor :doctor, :name, :genre
 
   def initialize(name, genre)
     @name = name
