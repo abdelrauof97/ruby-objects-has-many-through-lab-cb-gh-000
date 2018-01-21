@@ -1,7 +1,7 @@
 
 class Appointment 
   
-  attr_accessor :patient, :date
+  attr_accessor :patient, 
   attr_reader :doctor
   
   def initialize(date, doctor)
