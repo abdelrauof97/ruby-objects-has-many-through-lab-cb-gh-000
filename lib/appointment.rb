@@ -1,16 +1,4 @@
 
-class Appointment 
-  
-  attr_accessor :patient, 
-  attr_reader :doctor
-  
-  def initialize(date, doctor)
-    
-    
-    #doctor.add_appointment(self)
-  end
-  
-end
 
 class Appointment 
   
@@ -18,8 +6,8 @@ class Appointment
 
   def initialize(date, doctor)
     @date = date
-    @genre = genre 
-    genre.add_song(self)
+    @doctor = doctor 
+    doctor.add_appointment(self)
   end
   
 end 
